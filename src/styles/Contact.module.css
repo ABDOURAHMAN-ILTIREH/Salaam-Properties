@@ -1,0 +1,165 @@
+.section{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #e2dec3;
+    margin: 0 auto;
+    padding: 50px 9%;
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__text{
+    text-align: center;
+    margin: 15px 0;
+}
+.header__text span{
+    padding: 5px 12px;
+    background-color: #eae7d1;
+    color: goldenrod;
+    font-size: 17px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.header__form{
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgba(0,0,0,0.423);
+}
+.header__form h2{
+    margin: 20px;
+    font-weight: bold;
+    color: goldenrod;
+}
+form{
+    padding: 20px;
+}
+.input__form{
+    display: flex;
+    align-items: center;
+}
+.input__row{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 15px 5px;
+    text-transform: capitalize;
+}
+.input__row input{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid gray;
+    outline: none;
+    padding-left: 35px;
+    box-shadow: 5px 5px 5px -5px rgba(0,0,0,0.423);
+}
+.textarea {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 15px 0;
+}
+.textarea textarea{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    outline: none;
+    padding-left: 35px;
+    padding-top: 5px;
+    box-shadow: 5px 5px 5px -5px rgba(0,0,0,0.423);
+}
+::placeholder{
+    color: gray;
+    text-transform: capitalize;
+}
+.input__row i{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    color: goldenrod;
+    transform: translateY(-70%);
+    font-size: 20px;
+    transition: all  0.3s ease;
+    padding-left: 10px;
+
+}
+.textarea i{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    color: goldenrod;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: all  0.3s ease;
+    padding-left: 10px;
+}
+.input__row input:focus,
+.textarea textarea:focus{
+    border-color: goldenrod;
+    box-shadow: 5px 5px 5px -5px goldenrod;
+ }
+
+
+form button{
+        padding: 6px 15px;
+        border-radius: 3px;
+        font-size: 16px;
+        background-color: goldenrod;
+        border: 2px solid goldenrod;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 5px 5px 5px -5px rgba(0,0,0,0.423);
+        transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 1108px) {
+    .section{
+      padding: 20px;
+      height: 100%;
+    }
+  }
+
+@media only  screen and (max-width:779px){
+    .section{
+        padding: 10px;
+        height: 100%;
+      }
+    .input__form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    form{
+        padding: 10px;
+    }
+    .input__row, .textarea{
+        margin: 10px 0;
+    }
+    
+}
+@media only  screen and (max-width:557px){
+    form{
+        padding: 5px;
+    }
+    .input__row, .textarea{
+        margin: 7px 0;
+    }
+    .input__row input, 
+    .textarea textarea{
+        font-size: 15px;
+    }
+
+    ::placeholder{
+        font-size: 15px;
+    }
+}
